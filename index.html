@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/tablet.css">
+    <link rel="stylesheet" href="/mobile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__slider">
+                    <div class="calculator__type-clining active">
+                        <div class="calculator__title">Тип уборки</div>
+                        <div class="calculator__block-button">
+                            <div class="calculator__button calculator__button_type-clining" id="button-1">
+                                <div class="calculator__button-check">
+                                    <img class="calculator__button-check-img" src="./image/vector.svg" alt="">
+                                    <img class="calculator__button-check-img-active" src="./image/vector-active.svg" alt="">
+                                </div>
+                                <div class="calculator__button-text">Регулярная (поддерживающая)</div>
+                                <div class="calculator__button-question">
+                                    <div class="calculator__button-img">?</div>
+                                    <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                </div>
+                            </div>
+                            <div class="calculator__button calculator__button_type-clining" id="button-2">
+                                <div class="calculator__button-check">
+                                    <img class="calculator__button-check-img" src="./image/vector.svg" alt="">
+                                    <img class="calculator__button-check-img-active" src="./image/vector-active.svg" alt="">
+                                </div>
+                                <div class="calculator__button-text">Генеральная</div>
+                                <div class="calculator__button-question">
+                                    <div class="calculator__button-img">?</div>
+                                    <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                </div>
+                            </div>
+                            <div class="calculator__button calculator__button_type-clining" id="button-3">
+                                <div class="calculator__button-check">
+                                    <img class="calculator__button-check-img" src="./image/vector.svg" alt="">
+                                    <img class="calculator__button-check-img-active" src="./image/vector-active.svg" alt="">
+                                </div>
+                                <div class="calculator__button-text">После уборка</div>
+                                <div class="calculator__button-question">
+                                    <div class="calculator__button-img">?</div>
+                                    <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                </div>
+                            </div>
+                            <div class="calculator__button calculator__button_type-clining" id="button-4">
+                                <div class="calculator__button-check">
+                                    <img class="calculator__button-check-img" src="./image/vector.svg" alt="">
+                                    <img class="calculator__button-check-img-active" src="./image/vector-active.svg" alt="">
+                                </div>
+                                <div class="calculator__button-text">Отдельная зона</div>
+                                <div class="calculator__button-question">
+                                    <div class="calculator__button-img">?</div>
+                                    <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__button-previous-next">
+                            <div class="calculator__general-button calculator__general-button_previous">
+                                <!-- <button>Назад</button> -->
+                            </div>
+                            <div class="calculator__general-button calculator__general-button_next">
+                                <button id="next-one">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__area-and-pollution">
+                        <div class="calculator__title">Площадь и загрязнения</div>
+                        <div class="area-and-pollution__area">
+                            <label class="area-and-pollution__input-block">
+                                <div class="area-and-pollution__title">Площадь</div>
+                                <input type="number" min="0" max="200" value="50" id="input"
+                                    class="area-and-pollution__input" />
+                                <span class="area-and-pollution__input-units">м²</span>
+                            </label>
+                            <input type="range" id="range" class="area-and-pollution__input-range" min="5" max="250" value="50" step="1" />
+                            <div class="area-and-pollution__limits">
+                                <div class="limits_from">5 м²</div>
+                                <div class="limits_to">250 м²</div>
+                            </div>
+                        </div>
+                        <div class="area-and-pollution__pollution">
+                            <span class="area-and-pollution__title">Загрязнения</span>
+                            <div class="pollution__cleaning-level">
+                                <div class="pollution__level pollution__level_one" id="level-1">
+                                    <span>1</span>
+                                </div>
+                                <div class="pollution__level pollution__level_two" id="level-2">
+                                    <span>2</span>
+                                </div>
+                                <div class="pollution__level pollution__level_three" id="level-3">
+                                    <span>3</span>
+                                </div>
+                                <div class="pollution__level pollution__level_four" id="level-4">
+                                    <span>4</span>
+                                </div>
+                                <div class="pollution__level pollution__level_five" id="level-5">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="area-and-pollution__limits">
+                                <div class="limits_from">Слабо</div>
+                                <div class="limits_to">Сильно</div>
+                            </div>
+                        </div>
+                        <div class="calculator__button-previous-next">
+                            <div class="calculator__general-button calculator__general-button_previous">
+                                <button id="previous-two">Назад</button>
+                            </div>
+                            <div class="calculator__general-button calculator__general-button_next">
+                                <button id="next-two">Далее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__list-of-services">
+                        <div class="calculator__title">Список услуг</div>
+                        <div class="list-of-services__block">
+                            <div class="list-of-services__block-button">
+                                <div class="calculator__button calculator__button_list-of-services" id="services-1">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Генеральная уборка</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                                <div class="calculator__button calculator__button_list-of-services" id="services-2">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Уборка после ремонта</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-of-services__block-button">
+                                <div class="calculator__button calculator__button_list-of-services" id="services-3">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Поддерживающая уборка</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                                <div class="calculator__button calculator__button_list-of-services" id="services-4">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Мытьё окон</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-of-services__block-button">
+                                <div class="calculator__button calculator__button_list-of-services" id="services-5">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Обслуживание квартир</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                                <div class="calculator__button calculator__button_list-of-services" id="services-6">
+                                    <div class="calculator__button-check calculator__button-check_list-of-services">
+                                        <img class="calculator__button-check-img" src="./image/vector-two.svg" alt="">
+                                        <img class="calculator__button-check-img-active" src="./image/vector-two-active.svg" alt="">
+                                    </div>
+                                    <div class="calculator__button-text calculator__button-text_list-of-services">Мытьё полов</div>
+                                    <div class="calculator__button-question calculator__button-question_list-of-services">
+                                        <div class="calculator__button-img calculator__button-img_list-of-services">?</div>
+                                        <div class="calculator__button-hint">6Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dicta inventore? Minima blanditiis, commodi quis quasi placeat odit non culpa perspiciatis. Delectus facilis ea officiis tenetur doloremque perspiciatis aliquid velit.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="calculator__footer">
+                            <div class="footer__list">
+                                <div class="footer__item">
+                                    <div class="footer__icon">
+                                        <img src="./image/men.svg" alt="icon">
+                                    </div>
+                                    <div class="footer__text">
+                                        Количество человек: 10
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="footer__icon">
+                                        <img src="./image/time.svg" alt="icon">
+                                    </div>
+                                    <div class="footer__text">
+                                        Время уборки: 5-7 часов
+                                    </div>
+                                </div>
+                                <div class="footer__item">
+                                    <div class="footer__icon">
+                                        <img src="./image/label.svg" alt="icon">
+                                    </div>
+                                    <div class="footer__text">
+                                        Сумма: <span class="total-sum">0</span>
+                                    </div>
+                                </div>
+                                <div class="footer__text footer__text_error">
+                                    (Выбраны не все пункты)
+                                </div>
+                            </div>
+                            <div class="calculator__general-button calculator__general-button_footer">
+                                <button>Заказать</button>
+                            </div>
+                            <div class="calculator__button-previous-next calculator__button-previous-next_footer">
+                                <div class="calculator__general-button calculator__general-button_previous">
+                                    <button id="previous-three">Назад</button>
+                                </div>
+                                <div class="calculator__general-button calculator__general-button_next">
+                                    <button id="next-three">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="/script.js" type="module"></script>
+    <script src="/const.js" type="module"></script>
+    
+</body>
+
+</html>

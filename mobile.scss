@@ -1,0 +1,20 @@
+@media (max-width: 328px){
+    .calculator {
+        margin: 10px;
+        margin-top: 30px;
+        padding: 10px;
+        &__general-button button {
+            width: 35vw;
+        }
+    }
+    .area-and-pollution {
+    
+        &__area {
+            width: 100%;
+        }
+        &__pollution {
+
+            width: 100%;
+        }
+    }
+}

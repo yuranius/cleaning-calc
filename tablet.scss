@@ -1,0 +1,87 @@
+@media (max-width: 900px){
+    .footer{
+        &__list{
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .calculator {
+        &__button-previous-next {
+            display: flex;
+            width: 100%;
+            &_footer{
+                margin-top: 10px;
+            }
+        }
+        &__general-button button {
+            width: 120px;
+        }
+
+        &__general-button {
+            &_footer{
+                display: none;
+            }
+        }
+
+        &__slider {
+            display: block;
+        }
+        &__type-clining {
+            width: 100%;
+            display: none;
+        }
+        &__type-clining.active {
+            width: 100%;
+            display: block;
+        }
+        &__area-and-pollution {
+            width: 100%;
+            display: none;
+        }
+        &__area-and-pollution.active {
+            width: 100%;
+            display: block;
+        }
+        &__list-of-services {
+            width: 100%;
+            display: none;
+        }
+        &__list-of-services.active {
+            width: 100%;
+            display: block;
+        }
+        &__footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .list-of-services {
+        // .list-of-services__block-button
+        &__block {
+            flex-direction: column;
+        }
+        &__block-button:nth-child(2) {
+            margin: 0;
+        }
+    }
+
+    .footer {
+        // .footer__list
+    
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex: 1 1 auto;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &__item {
+            margin-top: 10px;
+        }
+    }
+
+}

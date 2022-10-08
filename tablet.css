@@ -1,0 +1,91 @@
+@media (max-width: 900px) {
+  .footer__list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculator__button-previous-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .calculator__button-previous-next_footer {
+    margin-top: 10px;
+  }
+  .calculator__general-button button {
+    width: 120px;
+  }
+  .calculator__general-button_footer {
+    display: none;
+  }
+  .calculator__slider {
+    display: block;
+  }
+  .calculator__type-clining {
+    width: 100%;
+    display: none;
+  }
+  .calculator__type-clining.active {
+    width: 100%;
+    display: block;
+  }
+  .calculator__area-and-pollution {
+    width: 100%;
+    display: none;
+  }
+  .calculator__area-and-pollution.active {
+    width: 100%;
+    display: block;
+  }
+  .calculator__list-of-services {
+    width: 100%;
+    display: none;
+  }
+  .calculator__list-of-services.active {
+    width: 100%;
+    display: block;
+  }
+  .calculator__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .list-of-services__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-of-services__block-button:nth-child(2) {
+    margin: 0;
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .footer__item {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+@media (max-width: 328px) {
+  .calculator {
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .calculator__general-button button {
+    width: 35vw;
+  }
+  .area-and-pollution__area {
+    width: 100%;
+  }
+  .area-and-pollution__pollution {
+    width: 100%;
+  }
+}
